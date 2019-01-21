@@ -3,7 +3,7 @@ pipeline {
   stages {
     stage('Update') {
       steps {
-        echo 'Test'
+        git(url: 'https://github.com/synthetichealth/synthea', branch: 'master')
       }
     }
   }
